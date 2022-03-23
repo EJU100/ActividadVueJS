@@ -49,6 +49,10 @@
 </ul>
 </div>
 
+<div id="example-4">
+    <h1 v-if="a">The condition is true</h1>
+</div>
+
   
   <script src="https://npmcdn.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -76,5 +80,6 @@
 	<script src="example-1.js"></script>
 	<script src="example-2.js"></script>
 	<script src="example-3.js"></script>
+	<script src="example-4.js"></script>
  </body>
 </html>

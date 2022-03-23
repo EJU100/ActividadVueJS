@@ -50,7 +50,9 @@
 </div>
 
 <div id="example-4">
-    <h1 v-if="a">The condition is true</h1>
+    <button class="btn btn-primary" v-on:click="a = !a">Show/hidden</button>
+
+    <p v-if="!a">Haga clic en el boton para esconder o aparecer</p>
 </div>
 
   
