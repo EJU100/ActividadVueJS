@@ -32,7 +32,7 @@
 
 
 <div class="container" style="margin-left: 40%; margin-top: 50px;">
-  <div id="app">
+  <div id="exercise">
     <p>El uso de condicionales se peude ver en la pagina de Cards</p>
     <p>Two way binding - {{ name }} {{ age }}</p>
     <p>Nombre</p>
@@ -61,7 +61,6 @@
 
 <script src="https://npmcdn.com/vue/dist/vue.js"></script>
 <script src="https://unpkg.com/vue/dist/vue.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
   new Vue({
     el: '#cambiarfoto',
@@ -76,37 +75,23 @@
 </script>
 <script>
   var app = new Vue({
-    el: '#app',
+    el: '#hide',
     data: {
-      message: 'Hello Vue!'
+      isHidden: false
     }
   })
 </script>
 <script>
   new Vue({
-    el: '#app',
+    el: '#exercise',
     data: {
-        name: 'Eren Julian Usta',
-        age: 26
+        name: 'Jesus Lozano',
+        age: 21
     }
 });
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
-	<head>
-		<link rel="stylesheet" href="index.css">
-		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-	</head>
-	<body>
-
-		<div id="app">
-			{{ message }}
-		</div>
-
-		<script src="app.js"></script>
-	</body>
-
 </body>
 </html>
