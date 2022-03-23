@@ -1,0 +1,14 @@
+<script>
+new Vue({
+  el: "#example-3",
+  data() {
+    return {
+      objectItems: {
+        key1: 'item1',
+        key2: 'item2',
+        key3: 'item3'
+      }
+    }
+  }
+});
+</script>
