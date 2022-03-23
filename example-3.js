@@ -1,10 +1,10 @@
-<script>
+
 new Vue({
   el: "#example-3",
-  data() {
-  return {
-    items: [{ message: 'Foo' }, { message: 'Bar' }]
-  }
+  data: {
+    items: [
+	{ lang: 'Foo' }, 
+	{ lang: 'Bar' }
+	],
 }
-});
-</script>
+})

@@ -23,14 +23,7 @@
                 }
             }).mount('#app')
         </script>
-  
-  <div class="container" style="margin-left: 40%; margin-top: 50px;">
-    <div id="exercise">
-        <p>Nombre {{ name }}</p>
-      <div>
-        <input v-model="name">
-    </div>
-    </div>
+ 
 	
 	<div id="example-1">
   <button v-on:click="counter += 1">Add 1</button>
@@ -50,17 +43,16 @@
 
 <div id="example-3">
   <ul>
-    <li v-for="item in items">
-		{{ item.message }}
-	</li>
-  </ul>
+ 
+  <li v-for="item in items" v-text="item.lang"></li>
+ 
+</ul>
 </div>
 
-  <div id="hide">
-    <button class="btn btn-primary" v-on:click="isHidden = !isHidden">Show/hidden</button>
+<div id="example-4">
+    <h1 v-if="a">The condition is true</h1>
+</div>
 
-    <p v-if="!isHidden">Haga clic en el boton para esconder o aparecer</p>
-  </div>
   
   <script src="https://npmcdn.com/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
@@ -88,5 +80,6 @@
 	<script src="example-1.js"></script>
 	<script src="example-2.js"></script>
 	<script src="example-3.js"></script>
+	<script src="example-4.js"></script>
  </body>
 </html>
